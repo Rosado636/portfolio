@@ -14,7 +14,7 @@ export default function AboutPage() {
       >
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">About Me</h1>
         <p className="text-zinc-400 text-lg leading-relaxed">
-          I'm <span className="text-white font-semibold">Anthony Rosado</span>, a passionate
+          I&apos;m <span className="text-white font-semibold">Anthony Rosado</span>, a passionate
           <span className="text-blue-400 font-semibold"> Full-Stack Developer</span> with a
           background in military service and a deep commitment to problem-solving through code.
         </p>

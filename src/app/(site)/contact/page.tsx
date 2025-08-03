@@ -48,8 +48,9 @@ export default function ContactPage() {
       >
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-center">Contact Me</h1>
         <p className="text-zinc-400 text-center mb-8">
-          Interested in working together or just want to say hi? Fill out the form below and I'll get back to you.
+            Interested in working together or just want to say hi? Fill out the form below and I&apos;ll get back to you.
         </p>
+
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
