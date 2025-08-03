@@ -1,10 +1,12 @@
 "use client";
 
-import { Projects } from "@/types/Projects";
+import { Project } from "@/types/Projects";
+
 import { X } from "lucide-react";
 
 interface ProjectModalProps {
-  project: Projects;
+ project: Project;
+
   onClose: () => void;
 }
 
