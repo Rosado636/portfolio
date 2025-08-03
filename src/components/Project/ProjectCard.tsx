@@ -1,10 +1,10 @@
-import { Projects } from "@/types/Projects";
+import { Project } from "@/types/Projects";
 
 export default function ProjectCard({
   projects,
   onClick,
 }: {
-  projects: Projects;
+  projects: Project;
   onClick?: () => void;
 }) {
   return (
