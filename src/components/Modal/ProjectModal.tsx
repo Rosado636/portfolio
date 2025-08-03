@@ -68,13 +68,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         {/* Optional image or screenshot */}
-        {project.image && (
+        {/* {project.image && (
           <img
             src={project.image}
             alt={project.title}
             className="mt-6 rounded border border-zinc-800"
           />
-        )}
+        )} */}
       </div>
     </div>
   );
