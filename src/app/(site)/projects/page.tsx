@@ -4,11 +4,13 @@ import { useState } from "react";
 import { projects } from "@/static-data/projects"; // your static project data
 import ProjectCard from "@/components/Project/ProjectCard"; // card display
 import ProjectModal from "@/components/Modal/ProjectModal"; // modal for details
-import { Projects } from "@/types/Projects";
+import { Project } from "@/types/Projects";
+
 
 export default function ProjectsPage() {
   // State to hold the currently selected project for the modal
-  const [selectedProject, setSelectedProject] = useState<Projects | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
 
    return (
     <div className="min-h-screen flex flex-col items-center justify-center py-10">
