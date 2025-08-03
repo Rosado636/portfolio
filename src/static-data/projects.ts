@@ -1,6 +1,6 @@
-import { Projects } from "@/types/Projects";
+import { Project } from "@/types/Projects";
 
-export const projects: Projects[] = [
+export const projects: Project[] = [
   {
     title: "Munch & Tell",
     tech: ["Next.js", "PostgreSQL", "Tailwind CSS", "Python"],
