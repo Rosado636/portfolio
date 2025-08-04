@@ -24,7 +24,11 @@ export default function CustomNavbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center text-white">
         {/* Brand */}
         <Link href="/" className="text-xl font-bold text-blue-500">
-          Anthony
+          <img
+          src="/images/logo/logo.png"
+          alt="Logo"
+          className="h-20 w-auto object-contain rounded-lg border border-white/30 bg-white/10 p-1 shadow-md"
+          />
         </Link>
 
         {/* Desktop menu: nav links + icons */}
