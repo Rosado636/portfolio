@@ -10,20 +10,48 @@ export default function ProjectCard({
   return (
     <div
       onClick={onClick}
-      className="border rounded-lg p-4 bg-white dark:bg-zinc-800 cursor-pointer hover:shadow-lg transition"
+      className="bg-zinc-900 text-white border border-zinc-700 rounded-lg p-4 shadow-md hover:shadow-lg transition cursor-pointer"
     >
+      {/* 
+      ORIGINAL (commented out):
+      className="border rounded-lg p-4 bg-white dark:bg-zinc-800 cursor-pointer hover:shadow-lg transition"
+      */}
+
       <h2 className="text-xl font-bold">{projects.title}</h2>
-      <p className="text-sm text-gray-500 dark:text-gray-400">{projects.description}</p>
+      <p className="text-sm text-zinc-300 mt-1">{projects.description}</p>
+
+      {/* Tech stack tags */}
       <div className="flex flex-wrap gap-2 mt-2">
         {projects.tech.map((tech) => (
-          <span key={tech} className="bg-gray-200 dark:bg-zinc-700 text-xs px-2 py-1 rounded">
+          <span
+            key={tech}
+            className="bg-zinc-800 border border-zinc-600 text-xs px-2 py-1 rounded text-white"
+          >
             {tech}
           </span>
         ))}
       </div>
+
+      {/* GitHub and Live links */}
       <div className="mt-2">
-        <span className="text-blue-600 underline mr-2">GitHub</span>
-        {projects.live && <span className="text-green-600 underline">Live</span>}
+        <a
+          href={projects.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 underline mr-4"
+        >
+          GitHub
+        </a>
+        {projects.live && (
+          <a
+            href={projects.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-400 hover:text-green-300 underline"
+          >
+            Live
+          </a>
+        )}
       </div>
     </div>
   );

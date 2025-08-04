@@ -21,7 +21,7 @@ export default function CustomNavbar() {
   return (
     <nav className="w-full bg-black/80 backdrop-blur sticky top-0 z-50 shadow-sm">
       {/* Top bar layout */}
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center text-white">
+      <div className="w-full px-6 py-3 flex justify-between items-center text-white">
         {/* Brand */}
         <Link href="/" className="text-xl font-bold text-blue-500">
           <img

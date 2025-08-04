@@ -41,4 +41,12 @@ export const projects: Project[] = [
     github: "https://github.com/Rosado636/Student-Class",
     live: "Coming soon",
   },
+    {
+    title: "ERA Solutions",
+    tech: ["React.js", "Tailwindcss"],
+    description:
+      "Veteran Opportunities Business Website",
+    github: "Coming soon",
+    live: "https://www.erasolutions.us/",
+  },
 ];

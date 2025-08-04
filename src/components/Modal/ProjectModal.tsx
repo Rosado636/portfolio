@@ -1,22 +1,24 @@
 "use client";
 
 import { Project } from "@/types/Projects";
-
 import { X } from "lucide-react";
 
 interface ProjectModalProps {
- project: Project;
-
+  project: Project;
   onClose: () => void;
 }
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50">
-      <div className="bg-white dark:bg-zinc-900 p-6 rounded-lg max-w-lg w-full relative shadow-xl">
+      {/* Modal container with forced dark theme styles */}
+      <div
+        className="bg-zinc-900 text-white border border-zinc-700 p-6 rounded-xl max-w-lg w-full relative shadow-2xl"
+      >
+
         {/* Close button */}
         <button
-          className="absolute top-4 right-4 text-white hover:text-zinc-400"
+          className="absolute top-4 right-4 text-zinc-400 hover:text-zinc-200"
           onClick={onClose}
         >
           <X size={24} />
@@ -67,14 +69,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           )}
         </div>
 
-        {/* Optional image or screenshot */}
-        {/* {project.image && (
+        {/* Optional image or screenshot - currently disabled */}
+        {/* 
+        {project.image && (
           <img
             src={project.image}
             alt={project.title}
             className="mt-6 rounded border border-zinc-800"
           />
-        )} */}
+        )} 
+        */}
       </div>
     </div>
   );

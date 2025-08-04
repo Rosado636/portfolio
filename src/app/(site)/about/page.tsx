@@ -71,7 +71,7 @@ function SkillsSection() {
     },
     {
       title: "Frameworks & Libraries",
-      items: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node.js", "Express"],
+      items: ["Next.js", "React.js", "Tailwind CSS", "Framer Motion", "Node.js", "Express"],
     },
     {
       title: "Tools & Platforms",

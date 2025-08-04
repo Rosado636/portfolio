@@ -1,15 +1,16 @@
-"use client";
+
 
 
 // import AuthProvider from "../context/AuthContext";
 // import ToasterContext from "../context/ToastContext";
 // import Footer from "@/components/Footer";
 // import Navbar from "@/components/Navbar";
+//import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
-import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import CustomNavbar from "@/components/Navbar/CustomNavbar"
+import { Providers } from "@/components/Providers"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,19 +41,15 @@ export default function RootLayout({
             showSpinner={false}
             shadow="none"
           />
-          <ThemeProvider
-            enableSystem={false}
-            attribute="class"
-            defaultTheme="dark"
-          >
             {/* <AuthProvider>
               <ToasterContext />
               <Navbar />
               <Footer />
             </AuthProvider> */}
+            <Providers>
             <CustomNavbar />
             {children}
-          </ThemeProvider>
+            </Providers>
         </div>
       </body>
     </html>
