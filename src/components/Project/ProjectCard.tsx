@@ -1,4 +1,18 @@
 import { Project } from "@/types/Projects";
+import TechBadge from "@/components/TechBadge/TechBadge";
+
+const techColors: Record<string, string> = {
+  Java: "bg-red-600",
+  Python: "bg-yellow-600 text-black",
+  "Tailwind CSS": "bg-teal-500",
+  "Next.js": "bg-black",
+  React: "bg-blue-600",
+  "React.js": "bg-blue-600",
+  PostgreSQL: "bg-indigo-700",
+  JavaScript: "bg-yellow-400 text-black",
+  TypeScript: "bg-blue-500",
+};
+
 
 export default function ProjectCard({
   projects,
@@ -21,16 +35,11 @@ export default function ProjectCard({
       <p className="text-sm text-zinc-300 mt-1">{projects.description}</p>
 
       {/* Tech stack tags */}
-      <div className="flex flex-wrap gap-2 mt-2">
-        {projects.tech.map((tech) => (
-          <span
-            key={tech}
-            className="bg-zinc-800 border border-zinc-600 text-xs px-2 py-1 rounded text-white"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
+     <div className="flex flex-wrap gap-2 mt-2">
+  {projects.tech.map((tech) => (
+    <TechBadge key={tech} tech={tech} />
+  ))}
+</div>
 
       {/* GitHub and Live links */}
       <div className="mt-2">

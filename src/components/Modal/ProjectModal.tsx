@@ -2,6 +2,8 @@
 
 import { Project } from "@/types/Projects";
 import { X } from "lucide-react";
+import TechBadge from "@/components/TechBadge/TechBadge";
+
 
 interface ProjectModalProps {
   project: Project;
@@ -35,12 +37,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <h3 className="text-lg font-semibold">Tech Stack</h3>
           <div className="flex flex-wrap gap-2 mt-1">
             {project.tech.map((tech, i) => (
-              <span
-                key={i}
-                className="bg-zinc-800 border border-zinc-700 text-sm px-3 py-1 rounded-full"
-              >
-                {tech}
-              </span>
+             <TechBadge key={i} tech={tech} />
             ))}
           </div>
         </div>
