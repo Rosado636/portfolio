@@ -6,47 +6,36 @@ export const projects: Project[] = [
     tech: ["Next.js", "PostgreSQL", "Tailwind CSS", "Python"],
     description:
       "A social food platform where foodies, chefs, and businesses share food experiences, reviews, and recipes. Supports creators and helps users discover and celebrate all things food.",
-    github: "https://github.com/Rosado636/Munch",
+    image:"/",
     live: "Coming soon",
   },
   {
-    title: "WorldPopulationGrowthGUI",
-    tech: ["Java"],
-    description:
-      "A GUI application that visualizes world population growth trends. Provides charts and population data interactions with user-friendly controls.",
-    github: "https://github.com/Rosado636/WorldPopulationGrowthGUI",
-    live: "Coming soon",
+    title: "Military Job Search Application",
+    tech: ["React.js", "Tailwind CSS"],
+    description: "My Map Plan is a professional networking platform tailored for veterans. It helps service members and veterans showcase their experience, build connections, and explore career opportunities in a supportive community",
+    image: "/images/projects/mmp.png",
+    live: "https://mymapplan.com/",
   },
   {
-    title: "EmployeeClass",
-    tech: ["Java"],
-    description:
-      "A simple Java program modeling employee data using object-oriented principles. Demonstrates class structure, encapsulation, and object manipulation.",
-    github: "https://github.com/Rosado636/employeeClass",
-    live: "Coming soon",
+    title: "Payment Module",
+    tech: ["React.js", "Tailwind CSS"],
+    description: "CIOTB is a training platform that helps individuals transition into technology careers.",
+    image: "/images/projects/payment.png",
+    live: "https://coitb.org/credentials",
   },
   {
-    title: "DiamondPrinting",
-    tech: ["Java"],
-    description:
-      "A console-based Java app that prints symmetrical diamond patterns using nested loops. Great for practicing control flow and output formatting.",
-    github: "https://github.com/Rosado636/diamondPrinting",
-    live: "Coming soon",
-  },
-  {
-    title: "Student-Class",
-    tech: ["Java"],
-    description:
-      "Models a student management system using Java OOP. Includes fields for name, ID, and grades, demonstrating method usage and data encapsulation.",
-    github: "https://github.com/Rosado636/Student-Class",
-    live: "Coming soon",
+    title: "Tech Academy Landing Page",
+    tech: ["React.js", "Tailwind CSS"],
+    description: "ERA-academy is a training platform that helps individuals transition into technology careers.",
+    image: "/images/projects/academy.png",
+    live: "https://www.erasolutions.us/era-academy2",
   },
     {
     title: "ERA Solutions",
     tech: ["React.js", "Tailwind CSS"],
     description:
       "Veteran Opportunities Business Website",
-    github: "Coming soon",
+    image: "/images/projects/1.png",
     live: "https://www.erasolutions.us/",
   },
   {
@@ -54,7 +43,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "Tailwind CSS"],
     description:
       "Showcasing a collection of full-stack and backend projects built with Java, Python, Next.js, and Tailwind CSS. Features include a responsive design, project modals with tech stacks, and a working contact form all built for performance, clarity, and professional presentation.",
-    github: "https://github.com/Rosado636/portfolio",
-    live: "https://portfolio-peach-nu-k1ke7v5j1o.vercel.app/",
+    image:"/",
+    live: "https://anthonyrosado.tech/",
   },
 ];

@@ -43,14 +43,14 @@ export default function ProjectCard({
 
       {/* GitHub and Live links */}
       <div className="mt-2">
-        <a
+        {/* <a
           href={projects.github}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:text-blue-300 underline mr-4"
         >
           GitHub
-        </a>
+        </a> */}
         {projects.live && (
           <a
             href={projects.live}

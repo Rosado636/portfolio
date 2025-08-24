@@ -44,16 +44,15 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
         {/* GitHub and Live links */}
         <div className="flex flex-wrap gap-4 mt-4">
-          {project.github && (
+          {/* {project.github && (
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 underline hover:text-blue-400"
             >
-              GitHub
             </a>
-          )}
+          )} */}
           {project.live && project.live !== "Coming soon" && (
             <a
               href={project.live}
